@@ -12,16 +12,16 @@ class EmailParser
 
   def parse
     @emails = @emails.split(", ")
-    @emails.each_with_index do |email, index|
-      if @emails.class == Array
+    if @emails.class == Array
+      @emails.each_with_index do |email, index|
         @emails=@emails.delete(email)
         new_split = email.split(" ")
         new_split.each do |email|
           @emails=@emails.push(email)
         end
-      else
-        @emails=@emails.split(" ")
       end
+    else
+      @emails=@emails.split(" ")
     end
     @emails
   end
