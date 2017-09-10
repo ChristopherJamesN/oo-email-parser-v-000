@@ -12,7 +12,9 @@ class EmailParser
 
   def parse
     @emails.split(", ")
-    
+    @emaisl.each do |email|
+      email.split(" ")
+    end
     @emails
   end
 
