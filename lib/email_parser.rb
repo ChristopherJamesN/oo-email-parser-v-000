@@ -11,8 +11,12 @@ class EmailParser
   end
 
   def parse
-    @emails=@emails.split(", ")
-    @emails=@emails.split(" ")
+    if @emails.length == 1
+      @emails=@emails.split(", ")
+    end
+    if @emails.length ==1
+      @emails=@emails.split(" ")
+    end
   end
 
 end
