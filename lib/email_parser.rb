@@ -14,7 +14,6 @@ class EmailParser
     @emails = @emails.split(", ")
     if @emails.class == Array
       @emails.each_with_index do |email, index|
-        @emails=@emails.delete(email)
         new_split = email.split(" ")
         new_split.each do |email|
           @emails=@emails.push(email)
