@@ -19,8 +19,9 @@ class EmailParser
         new_split.each do |email|
           @emails=@emails.push(email)
         end
+      else 
+        @emails=@emails.split(" ")
       end
-      
     end
     @emails
   end
