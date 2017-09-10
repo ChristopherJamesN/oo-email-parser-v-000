@@ -15,8 +15,7 @@ class EmailParser
     if @emails.class == String
       @emails = @emails.split(" ")
     end
-    @emails.uniq
-    @emails
+    @emails=@emails.uniq
   end
 
 end
