@@ -11,11 +11,8 @@ class EmailParser
   end
 
   def parse
-    if @emails.length == 1
-      @emails=@emails.split(", ")
-    end
-    if @emails.length == 1
-      @emails=@emails.split(" ")
+    @emails.each do |email|
+      email.split(", ")
     end
     @emails
   end
