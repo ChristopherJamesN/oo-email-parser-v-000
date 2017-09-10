@@ -11,7 +11,7 @@ class EmailParser
   end
 
   def parse
-    @emails = @emails.split(/\s|,/)
+    @emails = @emails.split(/\s|, /)
     @emails=@emails.uniq
   end
 
