@@ -13,7 +13,7 @@ class EmailParser
   def parse
     @emails = @emails.split(", ")
     @emails.each_with_index do |email, index|
-      if @emails.type == Array
+      if @emails.class == Array
         @emails=@emails.delete(email)
         new_split = emails.split(" ")
         new_split.each do |email|
