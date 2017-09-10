@@ -12,7 +12,10 @@ class EmailParser
 
   def parse
     @emails = @emails.split(", ")
-    @emails = @emails.split(" ")
+    if @emails.class == String
+      @emails = @emails.split(" ")
+    end
+    @emails
   end
 
 end
