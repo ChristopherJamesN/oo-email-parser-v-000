@@ -17,7 +17,6 @@ class EmailParser
         @emails.delete[index]
         @emails.push(email.split(" "))
       end
-      end
     end
     @emails
   end
