@@ -14,7 +14,7 @@ class EmailParser
     if @emails.length == 1
       @emails=@emails.split(", ")
     end
-    if @emails.length ==1
+    if @emails.length == 1
       @emails=@emails.split(" ")
     end
   end
